@@ -4,19 +4,23 @@ body {
 h1 {
   color: #70757a;
   font-size: 24px;
-  line-height: 26px;
   font-weight: 100;
-  margin: 0;
+  line-height: 28px;
+  margin-bottom: 0;
 }
+
 ul {
-  margin: 0 0 20px;
+  margin: 0px;
   padding: 0;
 }
 li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   color: #70757a;
   font-size: 16px;
-  line-height: 20px;
-  list-style: none;
+  font-weight: 100;
+  line-height: 19px;
 }
 .weather-app {
   border: 1px solid #dadde1;
@@ -25,14 +29,16 @@ li {
   margin: 20px auto;
   max-width: 600px;
 }
+
 .temperature {
-  font-weight: 400;
-  font-size: 54px;
+  font-weight: 400px;
+  font-size: 46px;
   color: #70757a;
 }
 .units {
   position: relative;
-  top: -27px;
+  font-size: 14px;
+  top: 10px;
 }
 
 .fa-solid {
@@ -49,4 +55,19 @@ li {
 .open-source {
   margin-left: 260px;
   font-size: 12px;
+}
+
+.weather-temperature .active {
+  color: #70757a;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  list-style: none;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
