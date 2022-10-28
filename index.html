@@ -10,23 +10,22 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    
+
     <script
       src="https://kit.fontawesome.com/497808e805.js"
       crossorigin="anonymous"
-      ></script>
-      <script
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
-      >
-    </script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css"/>
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
-     <div class="container">
+    <div class="container">
       <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
@@ -57,71 +56,55 @@
             </div>
           </div>
         </form>
-          <h1 id="city">
-            </h1>
-          <ul>
+        <h1 id="city"></h1>
+        <ul>
           <li id="date"></li>
-          <li id="description">
-          </li>
-          </ul>
-          
-          <div class="row">
-            <div class="col-6">
-            <div class = "d-flex weather-temperature">
-              <img src="" alt="Clear" id="icon">
-                <span class="temperature" id="temperature"></span> 
-                <span class="units">
-                  <a href="#" id="celsius-link" class="active">°C</a>| 
-                  <a href="#" id="fahrenheit-link">°F</a> </span>   
+          <li id="description"></li>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <img src="" alt="Clear" id="icon" />
+              <span class="temperature" id="temperature"></span>
+              <span class="units">
+                <a href="#" id="celsius-link" class="active">°C</a>|
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
           </div>
-          </div>
-     
+
           <div class="col-6">
             <ul>
-              <li>Humidity:<span id = "humidity"></span>%</li>
-              <li>Wind:<span id = "wind"></span>km/h</li>
+              <li>Humidity:<span id="humidity"></span>%</li>
+              <li>Wind:<span id="wind"></span>km/h</li>
             </ul>
           </div>
-          </div>
+        </div>
+        <div class="weather-forecast">
           <div class="row">
-            <div class="col-2">Sunday</div>
-            <div class="col-2">Monday</div>
-            <div class="col-2">Tuesday</div>
-            <div class="col-2">Wednesday</div>
-            <div class="col-2">Thursday</div>
-            <div class="col-2">Friday</div>
+            <div class="col-2">
+              <div class="weather-forecast">Sat</div>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18°</span>
+                <span class="weather-forecast-temperature-min">12°</span>
+              </div>
+            </div>
           </div>
-        
-    <div class="row">
-            <div class="col-2"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-            <div class="col-2"><i class="fa-solid fa-cloud-showers-water"></i></div>
-            <div class="col-2"><i class="fa-solid fa-cloud-sun"></i></div>
-            <div class="col-2"><i class="fa-solid fa-cloud-showers-water"></i></div>
-            <div class="col-2"><i class="fa-sharp fa-solid fa-sun"></i></div>
-            <div class="col-2"><i class="fa-sharp fa-solid fa-sun"></i></div>
-          </div>
-          <div class="row">
-            <div class="col-2">19°C</div>
-            <div class="col-2">20°C</div>
-            <div class="col-2">22°C</div>
-            <div class="col-2">19°C</div>
-            <div class="col-2">18°C</div>
-            <div class="col-2">19°C</div>
-          </div>
+        </div>
       </div>
-      <span class="open-source">
-  <a href ="https://github.com/KseniiaMar/weather_app.git" target="_blank">
-          Open source-code 
+      <small>
+        <a href="https://github.com/KseniiaMar/weather_app.git" target="_blank">
+          Open source-code
         </a>
         by Kseniia Marushchak
-      </span>
-      
+      </small>
     </div>
-    </div>
-    </div> 
-    </div> 
-    </div>
-    
     <script src="src/script.js"></script>
   </body>
 </html>

@@ -41,18 +41,12 @@ li {
   top: 10px;
 }
 
-.fa-solid {
-  font-size: 44px;
-  color: #70757a;
-}
 .search-form {
   margin-bottom: 10px;
   padding: 0;
 }
-.col-2 {
-  color: #70757a;
-}
-.open-source {
+
+small {
   margin-left: 260px;
   font-size: 12px;
 }
@@ -70,4 +64,22 @@ li {
   margin-right: 5px;
   height: 64px;
   width: 64px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #70757a;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
